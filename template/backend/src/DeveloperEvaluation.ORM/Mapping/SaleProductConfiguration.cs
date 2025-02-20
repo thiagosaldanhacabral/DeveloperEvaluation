@@ -16,7 +16,7 @@ namespace DeveloperEvaluation.ORM.Mapping
             builder.Property(vp => vp.SaleId)
                 .HasColumnType("uuid");
 
-            builder.Property(vp => vp.Product)
+            builder.Property(vp => vp.ProductId)
                 .HasColumnType("uuid");
 
             builder.HasOne(vp => vp.Sale)
