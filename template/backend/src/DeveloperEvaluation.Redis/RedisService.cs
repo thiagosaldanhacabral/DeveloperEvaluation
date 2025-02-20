@@ -12,7 +12,8 @@ public class RedisService : IRedisService
     {
         try
         {
-            _redis = ConnectionMultiplexer.Connect($"localhost:6379,password=Develop@01");
+            //_redis = ConnectionMultiplexer.Connect($"localhost:6379,password=Develop@01");
+            _redis = ConnectionMultiplexer.Connect($"localhost:6379,abortConnect=false");
             _database = _redis.GetDatabase();
         }
         catch (RedisConnectionException ex)
