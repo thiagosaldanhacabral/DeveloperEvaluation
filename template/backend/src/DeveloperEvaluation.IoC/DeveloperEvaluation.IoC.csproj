@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.8" />
+	  <PackageReference Include="System.Linq.Dynamic.Core" Version="1.4.9" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\DeveloperEvaluation.Domain\DeveloperEvaluation.Domain.csproj" />
+		<ProjectReference Include="..\DeveloperEvaluation.Application\DeveloperEvaluation.Application.csproj" />
+		<ProjectReference Include="..\DeveloperEvaluation.ORM\DeveloperEvaluation.ORM.csproj" />
+		<ProjectReference Include="..\DeveloperEvaluation.Common\DeveloperEvaluation.Common.csproj" />
+		<ProjectReference Include="..\DeveloperEvaluation.RabbitMQ\DeveloperEvaluation.RabbitMQ.csproj" />
+		<ProjectReference Include="..\DeveloperEvaluation.Redis\DeveloperEvaluation.Redis.csproj" />
+	</ItemGroup>
+
+</Project>

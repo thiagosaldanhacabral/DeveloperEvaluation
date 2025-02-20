@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DeveloperEvaluation.Redis": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

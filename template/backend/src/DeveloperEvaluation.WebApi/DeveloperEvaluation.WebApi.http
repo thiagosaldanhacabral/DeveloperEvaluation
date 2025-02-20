@@ -1,0 +1,62 @@
+@DeveloperEvaluation.WebApi_HostAddress = http://localhost:5119
+
+### SalesController
+
+# Create Sale
+POST {{DeveloperEvaluation.WebApi_HostAddress}}/api/Sales
+Content-Type: application/json
+
+{
+  "property1": "value1",
+  "property2": "value2"
+}
+
+# Get Sale by ID
+GET {{DeveloperEvaluation.WebApi_HostAddress}}/api/Sales/{id}
+
+# Update Sale
+PUT {{DeveloperEvaluation.WebApi_HostAddress}}/api/Sales
+Content-Type: application/json
+
+{
+  "property1": "value1",
+  "property2": "value2"
+}
+
+# Delete Sale by ID
+DELETE {{DeveloperEvaluation.WebApi_HostAddress}}/api/Sales/{id}
+
+### ProductController
+
+# Create Product
+POST {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product
+Content-Type: multipart/form-data
+
+{
+  "property1": "value1",
+  "property2": "value2"
+}
+
+# Get Product by ID
+GET {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product/{id}
+
+# List Products
+GET {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product?Page={Page}&Size={Size}&Order={Order}
+
+# List Products by Category
+GET {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product/category/{category}?Page={Page}&Size={Size}&Order={Order}
+
+# List Categories
+GET {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product/category
+
+# Update Product
+PUT {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product/{id}
+Content-Type: application/json
+
+{
+  "property1": "value1",
+  "property2": "value2"
+}
+
+# Delete Product by ID
+DELETE {{DeveloperEvaluation.WebApi_HostAddress}}/api/Product/{id}
